@@ -1,0 +1,40 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<KullaniciTarafi.Models.Referanslar>
+
+        <div class="row gy-4 isotope-container" >
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 col-md-6">
+            <img src="data:image/png;base64,@item.FirmaLogo" alt="Firma Logo" style="max-width: 100px; max-height: 100px;" />
+                  @* <img src="@item.ImageUrl" class="img-fluid" alt=""> *@
+                <h1>@item.FirmaAdi</h1>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            }
+        </div><!-- End Portfolio Items -->
+
+<style>
+    .col-lg-4, .col-md-6 {
+        display: flex;
+        margin-top:150px;
+        flex-direction: column; /* Dikey hizalama için */
+        align-items: center; /* Resimleri ortalamak için */
+        text-align: center; /* Yazıları ortalamak için */
+    }
+
+        .col-lg-4 img {
+            margin-bottom: 10px; /* Resim ile yazı arasına boşluk eklemek için */
+            height:100px;
+            width:100px;
+        }
+
+        .col-lg-4 h1 {
+            margin-top: 10px; /* Yazı ile diğer elemanlar arasında boşluk bırakmak için */
+        }
+
+        .col-lg-4 a {
+            margin-top: 10px; /* Link ile diğer elemanlar arasında boşluk bırakmak için */
+        }
+</style>

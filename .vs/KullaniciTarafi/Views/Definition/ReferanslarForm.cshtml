@@ -1,0 +1,25 @@
+﻿@model KayaHukukAdmin.Models.Referanslar
+
+
+<div class="modal-body">
+	<!-- Ürün ekleme formu -->
+	<form id="ReferansEkleForm" enctype="multipart/form-data" method="post" action="/Definition/SaveReferans">
+		<div class="form-group">
+			<label for="FirmaLogo">Firma Logo</label>
+			<input type="file" class="form-control" id="FirmaLogo" value="@Model.FirmaLogo" name="FirmaLogo" required>
+			<img src="@Model.FirmaLogo" alt="Firma Logo" />
+		</div>
+		<div class="form-group">
+			<label for="FirmaAdi">Firma Adı</label>
+			<input class="form-control" id="FirmaAdi" name="FirmaAdi" value="@Model.FirmaAdi" required>
+		</div>
+		<div class="modal-footer justify-content-between">
+			<button type="button" class="btn btn-default" data-bs-dismiss="modal">Kapat</button>
+			<button type="submit" class="btn btn-primary">Kaydet</button>
+		</div>
+		<input type="hidden" id="Id" name="Id" value="@Model.Id" />
+		
+	</form>
+</div>
+
+

@@ -1,0 +1,848 @@
+﻿<!-- Profile Info and Notifications -->
+@* <div class="col-md-9 col-sm-9 col-xs-9 clearfix">
+
+    <div class="user-info pull-left pull-none-xsm">
+        <div class="row">
+            <div>
+                <img style="width:50px;" src="../images/user.png" alt="" />
+            </div>
+            <div style="color: #373e4a;" class="pull-left pull-none-xsm">
+                &nbsp; @Context.Session.GetString("KullaniciAdi")
+                <br />
+                &nbsp; @Context.Session.GetString("KullaniciBirim")
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div> *@
+    @*<ul class="user-info pull-left pull-right-xs pull-none-xsm">
+
+    <!-- Raw Notifications -->
+    <li class="notifications dropdown">
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+    <i class="entypo-attention"></i>
+    <span class="badge badge-info">6</span>
+    </a>
+
+    <ul class="dropdown-menu">
+    <li class="top">
+    <p class="small">
+    <a href="#" class="pull-right">Mark all Read</a>
+    You have <strong>3</strong> new notifications.
+    </p>
+    </li>
+
+    <li>
+    <ul class="dropdown-menu-list scroller">
+    <li class="unread notification-success">
+    <a href="#">
+    <i class="entypo-user-add pull-right"></i>
+
+    <span class="line">
+    <strong>New user registered</strong>
+    </span>
+
+    <span class="line small">
+    30 seconds ago
+    </span>
+    </a>
+    </li>
+
+    <li class="unread notification-secondary">
+    <a href="#">
+    <i class="entypo-heart pull-right"></i>
+
+    <span class="line">
+    <strong>Someone special liked this</strong>
+    </span>
+
+    <span class="line small">
+    2 minutes ago
+    </span>
+    </a>
+    </li>
+
+    <li class="notification-primary">
+    <a href="#">
+    <i class="entypo-user pull-right"></i>
+
+    <span class="line">
+    <strong>Privacy settings have been changed</strong>
+    </span>
+
+    <span class="line small">
+    3 hours ago
+    </span>
+    </a>
+    </li>
+
+    <li class="notification-danger">
+    <a href="#">
+    <i class="entypo-cancel-circled pull-right"></i>
+
+    <span class="line">
+    John cancelled the event
+    </span>
+
+    <span class="line small">
+    9 hours ago
+    </span>
+    </a>
+    </li>
+
+    <li class="notification-info">
+    <a href="#">
+    <i class="entypo-info pull-right"></i>
+
+    <span class="line">
+    The server is status is stable
+    </span>
+
+    <span class="line small">
+    yesterday at 10:30am
+    </span>
+    </a>
+    </li>
+
+    <li class="notification-warning">
+    <a href="#">
+    <i class="entypo-rss pull-right"></i>
+
+    <span class="line">
+    New comments waiting approval
+    </span>
+
+    <span class="line small">
+    last week
+    </span>
+    </a>
+    </li>
+    </ul>
+    </li>
+
+    <li class="external">
+    <a href="#">View all notifications</a>
+    </li>
+    </ul>
+
+    </li>
+
+    <!-- Message Notifications -->
+    <li class="notifications dropdown">
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+    <i class="entypo-mail"></i>
+    <span class="badge badge-secondary">10</span>
+    </a>
+
+    <ul class="dropdown-menu">
+    <li>
+    <form class="top-dropdown-search">
+
+    <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search anything..." name="s" />
+    </div>
+
+    </form>
+
+    <ul class="dropdown-menu-list scroller">
+    <li class="active">
+    <a href="#">
+    <span class="image pull-right">
+    <img src="../images/thumb-1@2x.png" width="44" alt="" class="img-circle" />
+    </span>
+
+    <span class="line">
+    <strong>Luc Chartier</strong>
+    - yesterday
+    </span>
+
+    <span class="line desc small">
+    This ain’t our first item, it is the best of the rest.
+    </span>
+    </a>
+    </li>
+
+    <li class="active">
+    <a href="#">
+    <span class="image pull-right">
+    <img src="../images/thumb-2@2x.png" width="44" alt="" class="img-circle" />
+    </span>
+
+    <span class="line">
+    <strong>Salma Nyberg</strong>
+    - 2 days ago
+    </span>
+
+    <span class="line desc small">
+    Oh he decisively impression attachment friendship so if everything.
+    </span>
+    </a>
+    </li>
+
+    <li>
+    <a href="#">
+    <span class="image pull-right">
+    <img src="../images/thumb-3@2x.png" width="44" alt="" class="img-circle" />
+    </span>
+
+    <span class="line">
+    Hayden Cartwright
+    - a week ago
+    </span>
+
+    <span class="line desc small">
+    Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+    </span>
+    </a>
+    </li>
+
+    <li>
+    <a href="#">
+    <span class="image pull-right">
+    <img src="../images/thumb-4@2x.png" width="44" alt="" class="img-circle" />
+    </span>
+
+    <span class="line">
+    Sandra Eberhardt
+    - 16 days ago
+    </span>
+
+    <span class="line desc small">
+    On so attention necessary at by provision otherwise existence direction.
+    </span>
+    </a>
+    </li>
+    </ul>
+    </li>
+
+    <li class="external">
+    <a href="mailbox.html">All Messages</a>
+    </li>
+    </ul>
+
+    </li>
+
+    <!-- Task Notifications -->
+    <li class="notifications dropdown">
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+    <i class="entypo-list"></i>
+    <span class="badge badge-warning">1</span>
+    </a>
+
+    <ul class="dropdown-menu">
+    <li class="top">
+    <p>You have 6 pending tasks</p>
+    </li>
+
+    <li>
+    <ul class="dropdown-menu-list scroller">
+    <li>
+    <a href="#">
+    <span class="task">
+    <span class="desc">Procurement</span>
+    <span class="percent">27%</span>
+    </span>
+
+    <span class="progress">
+    <span style="width: 27%;" class="progress-bar progress-bar-success">
+    <span class="sr-only">27% Complete</span>
+    </span>
+    </span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <span class="task">
+    <span class="desc">App Development</span>
+    <span class="percent">83%</span>
+    </span>
+
+    <span class="progress progress-striped">
+    <span style="width: 83%;" class="progress-bar progress-bar-danger">
+    <span class="sr-only">83% Complete</span>
+    </span>
+    </span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <span class="task">
+    <span class="desc">HTML Slicing</span>
+    <span class="percent">91%</span>
+    </span>
+
+    <span class="progress">
+    <span style="width: 91%;" class="progress-bar progress-bar-success">
+    <span class="sr-only">91% Complete</span>
+    </span>
+    </span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <span class="task">
+    <span class="desc">Database Repair</span>
+    <span class="percent">12%</span>
+    </span>
+
+    <span class="progress progress-striped">
+    <span style="width: 12%;" class="progress-bar progress-bar-warning">
+    <span class="sr-only">12% Complete</span>
+    </span>
+    </span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <span class="task">
+    <span class="desc">Backup Create Progress</span>
+    <span class="percent">54%</span>
+    </span>
+
+    <span class="progress progress-striped">
+    <span style="width: 54%;" class="progress-bar progress-bar-info">
+    <span class="sr-only">54% Complete</span>
+    </span>
+    </span>
+    </a>
+    </li>
+    <li>
+    <a href="#">
+    <span class="task">
+    <span class="desc">Upgrade Progress</span>
+    <span class="percent">17%</span>
+    </span>
+
+    <span class="progress progress-striped">
+    <span style="width: 17%;" class="progress-bar progress-bar-important">
+    <span class="sr-only">17% Complete</span>
+    </span>
+    </span>
+    </a>
+    </li>
+    </ul>
+    </li>
+
+    <li class="external">
+    <a href="#">See all tasks</a>
+    </li>
+    </ul>
+
+    </li>
+
+    </ul>*@
+
+    
+<!-- Raw Links -->
+@*  <div class="col-md-3 col-sm-3 col-xs-3 clearfix">
+    <div style=" display: inline;" class="list-inline links-list pull-right">
+        <ul class="list-inline links-list pull-right">
+            <li style="display:inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li style=" display: inline;">
+                <a style="color: #373e4a;" href="~/Demands/TaleplerList?statusId=9" data-toggle="chat" data-collapse-sidebar="1">
+                    <i class="entypo-mail"></i>
+                    Yeni Talep
+                    <span class="badge badge-success chat-notifications-badge">@Context.Session.GetString("YeniTalepSayisi")</span>
+                </a>
+            </li>
+            <li style=" display: inline;" class="sep"></li>
+            <li style=" display: inline;">
+                <a style="color: #373e4a;" class="bottomNav" onclick="history.go(-1); return false;" href="#">
+                    &nbsp;&nbsp;&nbsp;Geri <i class="entypo-back right"></i>
+                </a>
+            </li>
+            <li style=" display: inline;" class="sep"></li>
+            <li style=" display: inline;">
+                <a style="color: #373e4a;" href="/LogOut">
+                    &nbsp;&nbsp;&nbsp;Çıkış <i class="entypo-logout right"></i>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>  *@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Index - Gp Bootstrap Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Gp
+    * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+    * Updated: Aug 07 2024 with Bootstrap v5.3.3
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1 class="sitename">GP</h1>
+                <span>.</span>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#hero" class="active">Ana Sayfa<br></a></li>
+                    <li><a href="#about">Hakkımızda</a></li>
+                    <li><a href="#portfolio">Referanslar</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <a class="btn-getstarted" href="#giris">Giriş Yap</a>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+
+            <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+
+            <div class="container">
+
+                <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-6 col-lg-8">
+                        <h2>Powerful Digital Solutions With GP<span>.</span></h2>
+                        <p>We are team of talented digital marketers</p>
+                    </div>
+                </div>
+
+                <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box">
+                            <i class="bi bi-binoculars"></i>
+                            <h3><a href="">Lorem Ipsum</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon-box">
+                            <i class="bi bi-bullseye"></i>
+                            <h3><a href="">Dolor Sitema</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon-box">
+                            <i class="bi bi-fullscreen-exit"></i>
+                            <h3><a href="">Sedare Perspiciatis</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="icon-box">
+                            <i class="bi bi-card-list"></i>
+                            <h3><a href="">Magni Dolores</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
+                        <div class="icon-box">
+                            <i class="bi bi-gem"></i>
+                            <h3><a href="">Nemos Enimade</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section><!-- /Hero Section -->
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 order-2 order-lg-1 content">
+                        <h3>Voluptatem dignissimos provident</h3>
+                        <p class="fst-italic">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                        </ul>
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section><!-- /About Section -->
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Portfolio</h2>
+                <p>Referanslar</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">App</li>
+                        <li data-filter=".filter-product">Card</li>
+                        <li data-filter=".filter-branding">Web</li>
+                    </ul><!-- End Portfolio Filters -->
+
+                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="css/yuzme.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Firma Adı 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="css/yuzme.jpg" title="Firma 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="css/yuzme.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Firma Adı 2</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="css/yuzme.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Firma Adı 3</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 2</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Product 2</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Branding 2</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 3</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Product 3</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Branding 3</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                    </div><!-- End Portfolio Container -->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Portfolio Section -->
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Contact</h2>
+                <p>Contact Us</p>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div><!-- End Google Maps -->
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+1 5589 55488 55</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@example.com</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                    </div>
+
+                    <div class="col-lg-8">
+                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                    <button type="submit">Send Message</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div><!-- End Contact Form -->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Contact Section -->
+
+    </main>
+    <section id="giris" class="giris section">
+        <div class="contain">
+            <div class="rowk">
+                <div class="giris">
+                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                        <div class="form-section">
+                            <h4 class="form-baslik">Giriş Yap</h4>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" class="form-control" placeholder="Şifre" required="">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn-submit">Giriş Yap</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="giris">
+                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                        <div class="form-section">
+                            <h4 class="form-baslik">Üye Ol</h4>
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Ad" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="surname" class="form-control" placeholder="Soyad" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="phone" class="form-control" placeholder="Tel" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" class="form-control" placeholder="Şifre" required="">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn-submit">Üye Ol</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .contain {
+                padding: 20px;
+                background-color: black;
+            }
+
+            .rowk {
+                display: flex;
+                gap: 20px; /* İki bölüm arasındaki boşluğu ayarlayabilirsiniz */
+            }
+
+            .giris {
+                flex: 1;
+            }
+
+            .form-section {
+                display: flex;
+                flex-direction: column;
+                gap: 15px; /* Form elemanları arasındaki boşluğu ayarlayabilirsiniz */
+            }
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .btn-submit {
+                background-color: dimgray; /* Buton rengi */
+                color: white; /* Buton üzerindeki metin rengi */
+                border: none; /* Kenarlık yok */
+                padding: 10px 20px; /* İç boşluk */
+                cursor: pointer; /* İmleci işaretçi yapar */
+            }
+
+            .form-baslik {
+                color: white;
+            }
+        </style>
+    </section>
+
+
+    <div class="copyright">
+        <div class="container text-center">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">GP</strong> <span>All Rights Reserved</span></p>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you've purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </div>
+    <style>
+        .copyright {
+            background-color: black;
+        }
+    </style>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

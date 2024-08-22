@@ -1,0 +1,36 @@
+﻿
+<a style="float:right;margin-bottom:10px;" onclick="showInPopup('@Url.Action("ReferanslarForm","Definition",new {id=0},Context.Request.Scheme)','Yeni Ekle')"
+   class="btn btn-info text-white">
+	<i class="fas fa-pencil-alt"></i>Yeni Ekle
+</a>
+
+
+<div id="divDataTable"></div>
+
+@section Scripts {
+	<script>
+        $(window).load(function () {
+            RefreshGrid();
+        });
+
+        function RefreshGrid() {
+
+            var exportStatus = true;
+            $.ajax({
+                url: "ReferanslarGridView/",
+                success: function (result) {
+                    $('#divDataTable').html(result);
+                    $('#productsTable').DataTable().destroy();
+                    $('#productsTable').DataTable({
+                        dom: 'Bfrtip',
+                        buttons: (exportStatus == true) ? ['pdf', 'excel'] : [],
+                        "pageLength": 25,
+                        "bLengthChange": false,
+                        "ordering": false,
+                    
+                    }).draw();
+                }
+            });
+        }
+	</script>
+}

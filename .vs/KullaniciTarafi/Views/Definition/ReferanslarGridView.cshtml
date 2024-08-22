@@ -1,0 +1,45 @@
+﻿@model IEnumerable<KayaHukukAdmin.Models.Referanslar>
+
+<table id="productsTable" class="display table table-striped">
+	<thead>
+		<tr>
+			<th class="col-md-1">ID</th>
+			<th class="col-md-5">Firma Adı</th>
+			<th class="col-md-4">Firma Logo</th>
+			<th class="col-md-2">Islem</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var referans in Model)
+		{
+			<tr>
+				<td>@referans.Id</td>
+				<td>@referans.FirmaAdi</td>
+
+				<td>
+					<img src="data:image/png;base64,@referans.FirmaLogo" alt="Firma Logo" style="max-width: 100px; max-height: 100px;" />
+				</td>
+
+				<td>
+					<div class="button-container">
+						<a class="btn btn-info text-white button delete-button" style="margin-top:10px;margin-left:10px" onclick="Delete($(this));" data-url="ReferansSil" data-id="@referans.Id">Sil</a>
+						<a style="float:right;margin-bottom:10px; margin-top:10px" onclick="showInPopup('@Url.Action("ReferanslarForm", "Definition", new { id = referans.Id }, Context.Request.Scheme)','Güncelle')"
+					   class="btn btn-info text-white">
+						<i class="fas fa-pencil-alt"></i>Güncelle
+					</a>
+					</div>
+				</td>
+			</tr>
+		}
+		<style>
+			.button{
+				height: 50px; /* Uzunluğu ayarlar */
+				display: flex; /* İçerik hizalamasını sağlar */
+				align-items: center; /* Dikeyde ortalar */
+				justify-content: center; /* Yatayda ortalar */
+				text-align: center; /* Yazıyı ortalar *
+			  }
+		</style>
+	</tbody>
+</table>
