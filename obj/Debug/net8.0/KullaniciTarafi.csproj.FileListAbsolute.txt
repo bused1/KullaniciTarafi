@@ -173,3 +173,12 @@ C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\obj\Debug\net8.0\ref
 C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\obj\Debug\net8.0\KullaniciTarafi.pdb
 C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\obj\Debug\net8.0\KullaniciTarafi.genruntimeconfig.cache
 C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\obj\Debug\net8.0\ref\KullaniciTarafi.dll
+C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\obj\Debug\net8.0\KullaniciTarafi.sourcelink.json
+C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\bin\Debug\net8.0\System.Web.Razor.dll
+C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\bin\Debug\net8.0\System.Web.Helpers.dll
+C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\bin\Debug\net8.0\System.Web.WebPages.Deployment.dll
+C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
+C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\bin\Debug\net8.0\System.Web.WebPages.dll
+C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\bin\Debug\net8.0\Microsoft.Web.Infrastructure.dll
+C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi\bin\Debug\net8.0\BCrypt.Net-Next.dll

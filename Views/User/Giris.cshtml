@@ -1,0 +1,74 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model KullaniciTarafi.Models.Kullanicilar
+<form id="form" action="/User/Giris" method="post">
+	<div class="giris">
+		<h3 class="h">Kullanıcı Girişi</h3>
+		<input type="email" name="Email" placeholder="Email" />
+		<input type="password" name="Sifre" placeholder="Sifre" />
+		<button type="submit">Giriş Yap</button>
+		<h6>Hesabınız yok mu? </h6>
+		<a href="~/User/UyeOl">Yeni Hesap Oluşturun</a>
+	</div>
+</form>
+<style>
+	body {
+		background-image: url('/assets/img/hero-bg.jpg'); /* Resmi arkaplan yapar */
+		background-size: cover; /* Resmin ekranı kaplamasını sağlar */
+		background-position: center; /* Resmin ortalanmasını sağlar */
+	}
+	#form {
+		display: flex;
+		justify-content: center; /* Yatayda ortalar */
+		align-items: center; /* Dikeyde ortalar */
+		height: 100vh; /* Ekranın tamamını kapsar */
+		
+	}
+
+	a {
+		color: gray; /* Linkin rengi */
+		text-decoration: none; /* Alt çizgiyi kaldırır */
+	}
+
+    a:hover {
+			color: orange; /* Üzerine gelindiğinde rengi değişir */
+			text-decoration: underline; /* Üzerine gelindiğinde altı çizilir */
+	}
+
+	.giris {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; /* Yatayda ortalar */
+		align-items: center; /* Dikeyde ortalar */ /* Elemanları dikey olarak hizalar */
+		width: 600px; /* Formun genişliğini kısıtlar */
+		height: 600px;
+		margin-top: 100px;
+		padding: 10px; /* İç boşluk ekler */
+		border: 1px solid #ddd; /* Hafif bir sınır ekler */
+		border-radius: 5px; /* Köşeleri yuvarlar */
+	}
+
+	.giris input[type="email"],
+	.giris input[type="password"],
+	.giris button {
+			width: 100%; /* Elemanları container genişliğine yayar */
+			padding: 8px; /* İç boşluk ekler */
+			margin-bottom: 10px; /* Elemanlar arasına boşluk ekler */
+			border: 1px solid #ccc; /* Hafif bir sınır ekler */
+			border-radius: 4px; /* Köşeleri yuvarlar */
+			font-size: 0.9rem; /* Küçük font boyutu */
+	}
+
+	.giris button {
+			background-color: gray; /* Buton arka plan rengi */
+			color: white; /* Buton yazı rengi */
+			border: none; /* Buton kenarını kaldırır */
+			cursor: pointer; /* Fareyi işaretçi yapar */
+	}
+
+	.giris button:hover /* .uyeol button:hover */ {
+				background-color: orange; /* Buton üzerine gelindiğinde arka plan rengi değişir */
+	}
+</style>

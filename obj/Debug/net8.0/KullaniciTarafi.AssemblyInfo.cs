@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KullaniciTarafi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40844d3c9628cb685e88e9d2c94c01304e56a41a")]
 [assembly: System.Reflection.AssemblyProductAttribute("KullaniciTarafi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KullaniciTarafi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,140 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<KullaniciTarafi.Models.Referanslar>
+<div class="footer">
+	<div class="row">
+		<div class="col contact-info">
+			<h5>İletişim</h5>
+			<h6>Adres: ERTUĞRUL MAH. EFLATUN(270) SK. OFİS 1071 NO:4 D:15 NİLÜFER / BURSA</h6>
+			<h6>E-mail: info@akista.com.tr</h6>
+			<h6>Telefon: 0850 888 00 90</h6>
+		</div>
+		<div class="col quick-access">
+			<h5>Hızlı Erişim</h5>
+			<div class="list-group">
+				<a href="~/Home/Index">
+					<i class="bi bi-caret-right-fill"></i> Ana Sayfa
+				</a>
+				<a href="~/User/Hakkimizda">
+					<i class="bi bi-caret-right-fill"></i> Hakkımızda
+				</a>
+				<a href="~/User/Portfolyo">
+					<i class="bi bi-caret-right-fill"></i> Referanslar
+				</a>
+				<a href="~/User/Iletisim">
+					<i class="bi bi-caret-right-fill"></i> İletişim
+				</a>
+			</div>
+		</div>
+		<div class="col contact-form">
+			<form method="post" action="/User/Iletisim">
+				<div>
+					@if (ViewBag.Uyari != null)
+					{
+						<p>@ViewBag.Uyari</p>
+					}
+				</div>
+				<h5>Bize Ulaşın</h5>
+				<div class="form-group">
+					<label for="ad">Ad:</label>
+					<input type="text" id="ad" name="ad" class="form-control" required />
+				</div>
+
+				<div class="form-group">
+					<label for="soyad">Soyad:</label>
+					<input type="text" id="soyad" name="soyad" class="form-control" required />
+				</div>
+
+				<div class="form-group">
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" name="email" class="form-control" required />
+				</div>
+
+				<div class="form-group">
+					<label for="mesaj">Mesaj:</label>
+					<textarea id="mesaj" name="mesaj" class="form-control" rows="5" required></textarea>
+				</div>
+
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary">Gönder</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</div>
+<style>
+	.row {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-top: 150px;
+		margin-bottom: 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	.contact-info, .quick-access, .contact-form {
+		flex: 1; /* Her sütunun eşit genişlikte olmasını sağlar */
+		margin: 0 20px; /* Sütunlar arasında boşluk bırakır */
+	}
+
+		.quick-access a {
+			display: block;
+			color: black; /* Link rengini siyah yapar */
+			margin-bottom: 10px;
+			text-decoration: none;
+			font-size: 16px;
+		}
+
+			.quick-access a i {
+				margin-right: 8px;
+			}
+    .row h5{
+	color:orange;
+	}
+	.contact-form {
+		padding: 20px;
+		background-color: #f9f9f9;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.form-group {
+		margin-bottom: 15px;
+	}
+
+		.form-group label {
+			font-weight: bold;
+		}
+
+	.form-control {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+
+		.form-control:focus {
+			border-color: gray;
+			outline: none;
+		}
+
+	.btn-primary {
+		width: 100%;
+		padding: 10px;
+		background-color: gray;
+		border: none;
+		border-radius: 4px;
+		color: #fff;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+		.btn-primary:hover {
+			background-color: orange;
+		}
+
+</style>

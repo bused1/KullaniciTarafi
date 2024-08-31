@@ -10,4 +10,10 @@ public partial class Referanslar
     public string? FirmaAdi { get; set; }
 
     public string? FirmaLogo { get; set; }
+
+    public string? Hakkimizda { get; set; }
+
+    public string? Vizyon { get; set; }
+
+    public string? Misyon { get; set; }
 }

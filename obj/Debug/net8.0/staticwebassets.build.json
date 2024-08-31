@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ylCkQwn8TU9JitlRtXmpg57MZ0xj3xmbNO6Dr2QfGjs=",
+  "Hash": "VNNW+/mbYtwGIAJyDzFL+wQu2w8dHr9fvz8qWW7OWqA=",
   "Source": "KullaniciTarafi",
   "BasePath": "_content/KullaniciTarafi",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\apple-touch-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\bused\\source\\repos\\KullaniciTarafi\\KullaniciTarafi\\wwwroot\\assets\\img\\background1.jpg",
+      "SourceId": "KullaniciTarafi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bused\\source\\repos\\KullaniciTarafi\\KullaniciTarafi\\wwwroot\\",
+      "BasePath": "_content/KullaniciTarafi",
+      "RelativePath": "assets/img/background1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\background1.jpg"
     },
     {
       "Identity": "C:\\Users\\bused\\source\\repos\\KullaniciTarafi\\KullaniciTarafi\\wwwroot\\assets\\img\\clients\\client-1.png",

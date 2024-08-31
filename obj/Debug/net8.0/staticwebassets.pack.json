@@ -1053,6 +1053,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\apple-touch-icon.png"
     },
     {
+      "Id": "C:\\Users\\bused\\source\\repos\\KullaniciTarafi\\KullaniciTarafi\\wwwroot\\assets\\img\\background1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\background1.jpg"
+    },
+    {
       "Id": "C:\\Users\\bused\\source\\repos\\KullaniciTarafi\\KullaniciTarafi\\wwwroot\\assets\\img\\clients\\client-1.png",
       "PackagePath": "staticwebassets\\assets\\img\\clients\\client-1.png"
     },

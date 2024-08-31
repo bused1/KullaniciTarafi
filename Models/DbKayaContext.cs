@@ -29,12 +29,15 @@ public partial class DbKayaContext : DbContext
         {
             entity.ToTable("Kullanicilar");
 
-            entity.Property(e => e.Isim)
+            entity.Property(e => e.Ad)
                 .HasMaxLength(50)
                 .IsUnicode(false);
-            entity.Property(e => e.Soyisim)
+            entity.Property(e => e.Email).HasMaxLength(50);
+            entity.Property(e => e.Sifre).HasMaxLength(50);
+            entity.Property(e => e.Soyad)
                 .HasMaxLength(50)
                 .IsUnicode(false);
+            entity.Property(e => e.Telefon).HasMaxLength(11);
         });
 
         modelBuilder.Entity<Referanslar>(entity =>
@@ -42,6 +45,9 @@ public partial class DbKayaContext : DbContext
             entity.ToTable("Referanslar");
 
             entity.Property(e => e.FirmaAdi).HasMaxLength(100);
+            entity.Property(e => e.Hakkimizda).IsUnicode(false);
+            entity.Property(e => e.Misyon).IsUnicode(false);
+            entity.Property(e => e.Vizyon).IsUnicode(false);
         });
 
         OnModelCreatingPartial(modelBuilder);

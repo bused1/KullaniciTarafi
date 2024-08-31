@@ -1,40 +1,65 @@
 ﻿@{
-	Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @model IEnumerable<KullaniciTarafi.Models.Referanslar>
 
-        <div class="row gy-4 isotope-container" >
-            @foreach (var item in Model)
-            {
-                <div class="col-lg-4 col-md-6">
-            <img src="data:image/png;base64,@item.FirmaLogo" alt="Firma Logo" style="max-width: 100px; max-height: 100px;" />
-                  @* <img src="@item.ImageUrl" class="img-fluid" alt=""> *@
+<div class="row gy-4 isotope-container">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-md-6">
+            <div class="portfolio-item">
+                <img src="data:image/png;base64,@item.FirmaLogo" alt="Firma Logo" class="portfolio-img" />
                 <h1>@item.FirmaAdi</h1>
-                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            }
-        </div><!-- End Portfolio Items -->
-
-<style>
-    .col-lg-4, .col-md-6 {
-        display: flex;
-        margin-top:150px;
-        flex-direction: column; /* Dikey hizalama için */
-        align-items: center; /* Resimleri ortalamak için */
-        text-align: center; /* Yazıları ortalamak için */
+                <a href="portfolio-details.html" title="More Details" class="details-link">
+                    <i class="bi bi-link-45deg"></i> 
+                </a>
+            </div>
+        </div>
     }
+</div><!-- End Portfolio Items -->
+<style>
+.col-lg-4, .col-md-6 {
+    display: flex;
+    justify-content: center; /* Öğeleri yatayda ortalar */
+    margin-top: 150px;
+}
 
-        .col-lg-4 img {
-            margin-bottom: 10px; /* Resim ile yazı arasına boşluk eklemek için */
-            height:100px;
-            width:100px;
-        }
+.portfolio-item {
+    position: relative;
+    text-align: center; /* Yazıları ortalar */
+}
 
-        .col-lg-4 h1 {
-            margin-top: 10px; /* Yazı ile diğer elemanlar arasında boşluk bırakmak için */
-        }
+.portfolio-img {
+    height: 130px;
+    width: 130px;
+    border: 2px solid #ddd; /* Çerçeve rengi ve kalınlığı */
+    border-radius: 8px; /* Köşeleri yuvarlar */
+    padding: 10px; /* Çerçeve ile resim arasına boşluk ekler */
+    background-color: #fff; /* Arka plan rengini beyaz yapar */
+    transition: all 0.3s ease; /* Yumuşak geçiş efekti */
+}
 
-        .col-lg-4 a {
-            margin-top: 10px; /* Link ile diğer elemanlar arasında boşluk bırakmak için */
-        }
+.portfolio-item:hover .portfolio-img {
+    opacity: 0.3; /* Hover durumunda resmi şeffaf yapar */
+}
+
+.details-link {
+    display: none; /* Başlangıçta bağlantı butonunu gizler */
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Merkezleme */
+    background-color: gray; /* Buton arka plan rengi */
+    color: #fff; /* Buton metin rengi */
+    padding: 10px 20px; /* Buton iç paddingi */
+    border-radius: 5px; /* Buton köşelerini yuvarlar */
+    text-decoration: none; /* Alt çizgi kaldırır */
+    font-size: 14px; /* Buton metin boyutu */
+    font-weight: bold; /* Buton metni kalın yapar */
+    transition: all 0.3s ease; /* Buton geçiş efekti */
+}
+
+.portfolio-item:hover .details-link {
+    display: block; /* Hover durumunda bağlantı butonunu gösterir */
+}
 </style>

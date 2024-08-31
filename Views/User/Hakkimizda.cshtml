@@ -1,0 +1,240 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<KullaniciTarafi.Models.Referanslar>
+<section id="about" class="about section">
+	@foreach (var referans in Model)
+	{
+		@if (!string.IsNullOrEmpty(referans.Hakkimizda))
+		{
+			<h2 class="hakkimizda-title">Hakkımızda</h2>
+			<p class="hakkimizda">@referans.Hakkimizda</p>
+		}
+
+		<div class="content-container">
+			@if (!string.IsNullOrEmpty(referans.Vizyon))
+			{
+				<div class="vizyon-container">
+					<div class="vizyon-header">
+						<i class="bi bi-stars icon"></i>
+						<h2 class="vizyon-title">Vizyonumuz</h2>
+					</div>
+					<p class="vizyon">@referans.Vizyon</p>
+				</div>
+			}
+
+			@if (!string.IsNullOrEmpty(referans.Misyon))
+			{
+				<div class="misyon-container">
+					<div class="misyon-header">
+						<i class="bi bi-stars icon"></i>
+						<h2 class="misyon-title">Misyonumuz</h2>
+					</div>
+					<p class="misyon">@referans.Misyon</p>
+				</div>
+			}
+		</div>
+		<div class="row">
+			<div class="col-xl-12 col-md-12">
+				<p class="copy">
+					"©  2019"
+					<a href="http://vebiz.com.tr/" target="_blank">Vebiz</a>
+					. © Tüm Hakları Saklıdır
+				</p>
+			</div>
+
+
+		</div>
+	}
+</section>
+<style>
+	#about .row
+	{
+	           margin-top:200px;
+			   background-color:gray;
+	}
+	#about {
+		background-color: white;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+		#about .hakkimizda {
+			text-indent: 20px;
+			margin-top: 20px;
+			margin-left: 300px;
+			margin-right: 300px;
+			z-index: 1;
+			position: relative;
+			font-size: 18px;
+			margin-bottom: 25px;
+			color: black;
+		}
+		#about .content-container {
+			display: flex;
+			justify-content: space-between;
+			width: 80%;
+		}
+
+		#about .vizyon-container,
+		#about .misyon-container {
+			flex: 1;
+			padding: 20px;
+		}
+
+		#about .vizyon-header,
+		#about .misyon-header {
+			display: flex;
+			align-items: center; /* İkon ve başlığı dikeyde ortalar */
+		}
+
+		#about .icon {
+			margin-right: 15px; /* İkon ile başlık arasına boşluk ekler */
+			font-size: 24px; /* İkon boyutunu ayarlar */
+			color: orange; /* İkon rengini ayarlar */
+		}
+
+		#about .vizyon-title,
+		#about .misyon-title {
+			margin: 0; /* Margin'i sıfırlar */
+			font-size: 28px;
+			color: orange;
+		}
+
+		#about .vizyon,
+		#about .misyon {
+			text-align: left; /* Metni sola hizalar */
+			padding-left: 20px; /* Sol kenardan boşluk bırakır */
+			margin-left: 20px; /* Sol kenardan uzaklık bırakır */
+			font-size: 15px;
+			color: black;
+		}
+
+		#about .hakkimizda-title {
+			margin-top: 90px;
+			font-size: 27px;
+			color: orange;
+		}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<KullaniciTarafi.Models.Referanslar>
+<section id="about" class="about section">
+    @foreach (var referans in Model)
+    {
+        @if (!string.IsNullOrEmpty(referans.Hakkimizda))
+        {
+            <h2 class="hakkimizda-title">Hakkımızda</h2>
+            <p class="hakkimizda">@referans.Hakkimizda</p>
+        }
+
+        @if (!string.IsNullOrEmpty(referans.Vizyon))
+        {
+            <h2 class="vizyon-title">Vizyonumuz</h2>
+            <p class="vizyon">@referans.Vizyon</p>
+        }
+
+        @if (!string.IsNullOrEmpty(referans.Misyon))
+        {
+            <h2 class="misyon-title">Misyonumuz</h2>
+            <p class="misyon">@referans.Misyon</p>
+        }
+    }
+</section>
+<style>
+#about {
+    background-image: url('/assets/img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+#about p {
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    z-index: 1;
+    position: relative;
+    font-size: 21px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.about section {
+    position: relative;
+    z-index: 1;
+}
+
+#about h2 {
+    margin-top: 130px;
+    margin-left: 630px;
+    z-index: 1;
+    position: relative;
+    font-size: 27px;
+    color: white;
+}
+#about .vizyon-title {
+    margin-top: 30px;
+    margin-left: 60px;
+    font-size: 28px;
+    color: lightblue;
+}
+
+#about .vizyon {
+    margin-top: 20px;
+    margin-left: 60px;
+    font-size: 22px;
+    color: lightblue;
+}
+
+/* Misyon kısmı için özel stiller */
+#about .misyon-title {
+    margin-top: 30px;
+    margin-right: 60px;
+    font-size: 28px;
+    color: lightgreen;
+}
+
+#about .misyon {
+    margin-top: 20px;
+    margin-left: 340px;
+    font-size: 22px;
+    color: lightgreen;
+}
+</style> *@
