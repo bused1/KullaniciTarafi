@@ -4,6 +4,14 @@
 @model KullaniciTarafi.Models.Kullanicilar
 <form id="form" action="/User/Giris" method="post">
 	<div class="giris">
+		@if (ViewData["SuccessMessage"] != null)
+		{
+			<h4>@ViewData["SuccessMessage"]</h4>
+		}
+		@if (ViewData["ErrorMessage"] != null)
+		{
+			<h4>@ViewData["ErrorMessage"]</h4>
+		}
 		<h3 class="h">Kullanıcı Girişi</h3>
 		<input type="email" name="Email" placeholder="Email" />
 		<input type="password" name="Sifre" placeholder="Sifre" />
@@ -36,6 +44,10 @@
 			text-decoration: underline; /* Üzerine gelindiğinde altı çizilir */
 	}
 
+	.giris h4 {
+		margin-top: 25px;
+		color: orange;
+	}
 	.giris {
 		background-color: white;
 		display: flex;

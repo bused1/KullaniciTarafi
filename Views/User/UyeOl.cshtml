@@ -3,12 +3,20 @@
 }
 @model KullaniciTarafi.Models.Kullanicilar
 
-<form id="form" action="/User/UyeOl" method="post">
+<form id="form" action="~/User/UyeOl" method="post">
 	<div class="uyeol">
+		@if (ViewData["SuccessMessage"] != null)
+		{
+			<h4>@ViewData["SuccessMessage"]</h4>
+		}
+		@if (ViewData["ErrorMessage"] != null)
+		{
+			<h4>@ViewData["ErrorMessage"]</h4>
+		}
 		<h3>Üye Ol</h3>
 		<input type="text" name="ad" placeholder="Ad" />
 		<input type="text" name="soyad" placeholder="Soyad" />
-		<input type="number" name="tel" placeholder="Telefon" />
+		<input type="text" name="telefon" pattern="\d{11}" maxlength="11" placeholder="Telefon" />
 		<input type="email" name="email" placeholder="Email" />
 		<input type="password" name="sifre" placeholder="Şifre" />
 		<button type="submit">Üye Ol</button>
@@ -54,7 +62,10 @@
 		border-radius: 4px; /* Köşeleri yuvarlar */
 		font-size: 0.9rem; /* Küçük font boyutu */
 	}
-
+	.uyeol h4{
+		margin-top:25px;
+		color:orange;
+	}
 	.uyeol button{
 		background-color: gray; /* Buton arka plan rengi */
 		color: white; /* Buton yazı rengi */

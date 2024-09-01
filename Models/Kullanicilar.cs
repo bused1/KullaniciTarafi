@@ -22,10 +22,8 @@ public partial class Kullanicilar
     public string Email { get; set; }
 
     [Required]
-    public string Sifre { get; set; }
-
-    [Required]
     public string Mesaj { get; set; }
-    public string? PasswordHash { get; set; } // Şifre hash'i için bir özellik
+	[Required]
+	public string PasswordHash { get; set; } // Şifre hash'i için bir özellik
 
 }
