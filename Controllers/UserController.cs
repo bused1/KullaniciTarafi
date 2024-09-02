@@ -101,13 +101,12 @@ namespace KullaniciTarafi.Controllers
 				if (isPasswordCorrect)
 				{
 					// Giriş başarılı
-					Console.WriteLine("Giriş başarılı!");
+					ViewData["SuccessMessage"] = "Giriş Başarılı";
 					// Kullanıcıyı yönlendirin veya bir oturum başlatın
 				}
 				else
 				{
-					// Yanlış şifre
-					Console.WriteLine("Yanlış şifre.");
+					ViewData["ErrorMessage"] = "Şifre Yanlış! "; 
 				}
 			}
 			else
@@ -138,7 +137,7 @@ namespace KullaniciTarafi.Controllers
 					var smtpClient = new SmtpClient("smtp.gmail.com")
 					{
 						Port = 587,
-						Credentials = new NetworkCredential("bused890@gmail.com", "cwgd wjhc qqak jykq\r\n"),
+						Credentials = new NetworkCredential("bused890@gmail.com", "usyb vhyu izqr ousk\r\n"),
 						EnableSsl = true,
 					};
 

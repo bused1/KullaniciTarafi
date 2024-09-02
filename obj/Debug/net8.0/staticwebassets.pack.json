@@ -1105,6 +1105,18 @@
       "PackagePath": "staticwebassets\\assets\\img\\hero-bg.jpg"
     },
     {
+      "Id": "C:\\Users\\bused\\source\\repos\\KullaniciTarafi\\KullaniciTarafi\\wwwroot\\assets\\img\\hukuk1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hukuk1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bused\\source\\repos\\KullaniciTarafi\\KullaniciTarafi\\wwwroot\\assets\\img\\hukuk2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hukuk2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bused\\source\\repos\\KullaniciTarafi\\KullaniciTarafi\\wwwroot\\assets\\img\\hukuk3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hukuk3.jpg"
+    },
+    {
       "Id": "C:\\Users\\bused\\source\\repos\\KullaniciTarafi\\KullaniciTarafi\\wwwroot\\assets\\img\\logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo.png"
     },
