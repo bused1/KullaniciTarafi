@@ -26,6 +26,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\bused\source\repos\KullaniciTarafi\KullaniciTarafi
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/bused/source/repos/KullaniciTarafi/KullaniciTarafi/Views/Definition/ReferanslarForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmaW5pdGlvblxSZWZlcmFuc2xhckZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bused/source/repos/KullaniciTarafi/KullaniciTarafi/Views/Definition/ReferanslarGridView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmaW5pdGlvblxSZWZlcmFuc2xhckdyaWRWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bused/source/repos/KullaniciTarafi/KullaniciTarafi/Views/Definition/ReferansList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmaW5pdGlvblxSZWZlcmFuc0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bused/source/repos/KullaniciTarafi/KullaniciTarafi/Views/Definition/ReferansSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmaW5pdGlvblxSZWZlcmFuc1NpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bused/source/repos/KullaniciTarafi/KullaniciTarafi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

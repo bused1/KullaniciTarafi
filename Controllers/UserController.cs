@@ -31,7 +31,6 @@ namespace KullaniciTarafi.Controllers
 		}
 		public IActionResult Portfolyo()
 		{
-			// Veritabanından Portfolyo verilerini al
 			var portfolioItems = _context.Referanslars.ToList();
 			return View(portfolioItems);
 		}
@@ -100,13 +99,11 @@ namespace KullaniciTarafi.Controllers
 
 				if (isPasswordCorrect)
 				{
-					// Giriş başarılı
-					ViewData["SuccessMessage"] = "Giriş Başarılı";
-					// Kullanıcıyı yönlendirin veya bir oturum başlatın
-				}
+			        return RedirectToAction("ReferansList", "Definition");
+                }
 				else
 				{
-					ViewData["ErrorMessage"] = "Şifre Yanlış! "; 
+					ViewData["ErrorMessage"] = "Şifre Yanlış!"; 
 				}
 			}
 			else
